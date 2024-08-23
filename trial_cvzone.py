@@ -10,7 +10,7 @@ cap = cv2.VideoCapture(0)
 detector = HandDetector(maxHands = 2, detectionCon=0.8 )
 
 try:
-    arduino = serial.Serial(port='COM11', baudrate=115200, timeout=0.1)
+    arduino = serial.Serial(port='COM10', baudrate=115200, timeout=0.1)
 except serial.SerialException as e:
     print(f"Error opening serial port: {e}")
     exit()

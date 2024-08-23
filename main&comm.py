@@ -10,7 +10,7 @@ mp_draw = mp.solutions.drawing_utils
 
 # Set up serial communication with Arduino
 try:
-    arduino = serial.Serial(port='COM11', baudrate=115200, timeout=.1)  # Increased baud rate for faster communication
+    arduino = serial.Serial(port='COM10', baudrate=115200, timeout=.1)  # Increased baud rate for faster communication
 except serial.SerialException as e:
     print(f"Error opening serial port: {e}")
     exit()
